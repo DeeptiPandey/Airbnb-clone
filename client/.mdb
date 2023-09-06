@@ -1,0 +1,8 @@
+{
+  "projectName": "frontend",
+  "meta": {
+    "type": "frontend"
+  },
+  "packageManager": "yarn",
+  "hash": "e44eb360"
+}

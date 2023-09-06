@@ -1,0 +1,10 @@
+{
+  "projectName": "airbnb-clone",
+  "meta": {
+    "type": "backend"
+  },
+  "backend": {
+    "platform": "node17"
+  },
+  "hash": "177d5b40"
+}
