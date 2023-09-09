@@ -222,7 +222,20 @@ app.post('/bookings',  async (req,res) => {
     });
 });
 
+app.delete('/bookings/:id', async (req, res) => {
+    const { id } = req.params;
 
+    try {
+        // Find the booking by ID and delete it from the database
+        await Booking.findByIdAndDelete(id);
+
+        // Send a success response
+        res.sendStatus(204); // No Content
+    } catch (error) {
+        // Handle any errors and send an error response
+        res.status(500).json({ error: 'An error occurred while deleting the booking' });
+    }
+});
 
 app.get('/bookings', async (req,res) => {
  const userData= await  getUserDataFromReq(req);
